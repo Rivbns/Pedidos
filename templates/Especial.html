@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/css/style3.css" />
+    <title>Piscanos pedidos</title>
+  </head>
+    <body>
+      <header class="header">
+        <nav class="main-nav header__nav">
+          <img src="../static/img/logo.png" class="header__logo" alt="wasap" width="65" height="65" />
+          <ul class="main-nav__list header__nav__list">
+            <li class="main-list__item list-item">
+            <a class="list__items" href="#description">DETALLES</a>
+            </li>
+            <li class="main-list__item list-item">
+            <a class="list__items" href="#comments">RESEÑAS</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <form action="/Especial" method="POST">
+        <section class="lower__header">
+          <a class="l-header__menu1--home" href="/">
+            <img class="l-header__home--icon" src="../static/img/Home.png" alt="Home" width="40" height="40" />
+            <h4 class="span1">Home</h4>
+          </a>  
+        </section>
+      </form>
+        <main class="main">
+            <section class="main__section" id="description">
+            <h1 class="section__title">Especial Esmuposo Semiseco 750 ml.</h1>
+            <img class="section__stars" src="../static/img/Estrellas.png" alt="Stars">
+            </section>
+            <section class="sections__container">
+              <div>
+                  <img class="container__image" src="../static/img/espumnte_especial_tabernero.png" alt="Chilcano">
+              </div>
+              <div class="container__description">
+                <div class="container__PriceReal">
+                  <p class="price__real">S/ 26.80</p>
+                  <span class="percentage" >-11%</span>
+                </div>
+                <p class="price__false">
+                      S/ 31.50
+                    <span class="typePrice">Precio</span>
+                </p>
+                <div class="container__buttom">
+                  <form action="/Especial" method="POST">
+                    <div>
+                        <input class="button1" type="submit" name="button1" value="!Pide YA¡">
+                    </div>
+                  </form>
+                    <div class="container__Stock">
+                      <p> Stock:2</p>
+                    </div>
+                </div>    
+              </div>
+            </section>
+      <section class="main__feedback feedback"  id="comments">
+        <h2 class="feedback__title">Comentarios</h2>
+        <form action="" method="POST" class="feedback__form form">
+          <label for="email">
+            <input type="email" class="form__input" name="email" id="email" placeholder="E-mail" required>
+          </label>
+          <label for="text">
+            <textarea name="text" class="form__input" id="text" cols="60" rows="5" required placeholder="Comment"></textarea>
+          </label>
+            <button class="form__button" type="submit">SEND</button>
+        </form>
+      </section>
+          </main>
+    </body>
+</html>
